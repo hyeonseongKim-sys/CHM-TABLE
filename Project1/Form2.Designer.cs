@@ -71,16 +71,16 @@
             this.construction.Location = new System.Drawing.Point(0, 0);
             this.construction.Name = "construction";
             this.construction.RowCount = 8;
-            this.construction.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.827068F));
-            this.construction.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.210526F));
-            this.construction.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.16541F));
-            this.construction.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 19.73684F));
-            this.construction.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 22.18045F));
-            this.construction.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 17.10526F));
-            this.construction.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4.60543F));
+            this.construction.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.169341F));
+            this.construction.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.05169F));
+            this.construction.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.39929F));
+            this.construction.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 18.18182F));
+            this.construction.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 18.00356F));
+            this.construction.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 17.82531F));
+            this.construction.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.199643F));
             this.construction.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4.60543F));
             this.construction.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.construction.Size = new System.Drawing.Size(858, 532);
+            this.construction.Size = new System.Drawing.Size(884, 561);
             this.construction.TabIndex = 1;
             // 
             // methodNameBox
@@ -90,7 +90,7 @@
             this.methodNameBox.Font = new System.Drawing.Font("굴림", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.methodNameBox.Location = new System.Drawing.Point(3, 3);
             this.methodNameBox.Name = "methodNameBox";
-            this.methodNameBox.Size = new System.Drawing.Size(852, 25);
+            this.methodNameBox.Size = new System.Drawing.Size(878, 25);
             this.methodNameBox.TabIndex = 0;
             this.methodNameBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -99,11 +99,11 @@
             this.construction.SetColumnSpan(this.descriptionBox, 2);
             this.descriptionBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.descriptionBox.Font = new System.Drawing.Font("굴림", 10F);
-            this.descriptionBox.Location = new System.Drawing.Point(3, 34);
+            this.descriptionBox.Location = new System.Drawing.Point(3, 32);
             this.descriptionBox.Multiline = true;
             this.descriptionBox.Name = "descriptionBox";
             this.descriptionBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.descriptionBox.Size = new System.Drawing.Size(852, 43);
+            this.descriptionBox.Size = new System.Drawing.Size(878, 56);
             this.descriptionBox.TabIndex = 2;
             // 
             // label1
@@ -111,9 +111,9 @@
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("굴림", 10F);
-            this.label1.Location = new System.Drawing.Point(3, 116);
+            this.label1.Location = new System.Drawing.Point(3, 130);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(165, 14);
+            this.label1.Size = new System.Drawing.Size(170, 14);
             this.label1.TabIndex = 1;
             this.label1.Text = "구      문";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -123,9 +123,9 @@
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("굴림", 10F);
-            this.label2.Location = new System.Drawing.Point(3, 211);
+            this.label2.Location = new System.Drawing.Point(3, 227);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(165, 14);
+            this.label2.Size = new System.Drawing.Size(170, 14);
             this.label2.TabIndex = 1;
             this.label2.Text = "매개변수";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -135,9 +135,9 @@
             this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("굴림", 10F);
-            this.label3.Location = new System.Drawing.Point(3, 323);
+            this.label3.Location = new System.Drawing.Point(3, 328);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(165, 14);
+            this.label3.Size = new System.Drawing.Size(170, 14);
             this.label3.TabIndex = 1;
             this.label3.Text = "반 환 값";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -147,9 +147,9 @@
             this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("굴림", 10F);
-            this.label4.Location = new System.Drawing.Point(3, 427);
+            this.label4.Location = new System.Drawing.Point(3, 429);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(165, 14);
+            this.label4.Size = new System.Drawing.Size(170, 14);
             this.label4.TabIndex = 1;
             this.label4.Text = "예    제";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -159,9 +159,9 @@
             this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("굴림", 10F);
-            this.label5.Location = new System.Drawing.Point(3, 485);
+            this.label5.Location = new System.Drawing.Point(3, 502);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(165, 14);
+            this.label5.Size = new System.Drawing.Size(170, 14);
             this.label5.TabIndex = 1;
             this.label5.Text = "참고항목";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -170,56 +170,58 @@
             // 
             this.constructionBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.constructionBox.Font = new System.Drawing.Font("굴림", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.constructionBox.Location = new System.Drawing.Point(174, 83);
+            this.constructionBox.Location = new System.Drawing.Point(179, 94);
             this.constructionBox.Multiline = true;
             this.constructionBox.Name = "constructionBox";
             this.constructionBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.constructionBox.Size = new System.Drawing.Size(681, 80);
+            this.constructionBox.Size = new System.Drawing.Size(702, 86);
             this.constructionBox.TabIndex = 3;
             // 
             // revalBox
             // 
             this.revalBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.revalBox.Location = new System.Drawing.Point(174, 274);
+            this.revalBox.Location = new System.Drawing.Point(179, 288);
             this.revalBox.Multiline = true;
             this.revalBox.Name = "revalBox";
             this.revalBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.revalBox.Size = new System.Drawing.Size(681, 112);
+            this.revalBox.Size = new System.Drawing.Size(702, 95);
             this.revalBox.TabIndex = 3;
             // 
             // refBox
             // 
             this.refBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.refBox.Location = new System.Drawing.Point(174, 483);
+            this.refBox.Location = new System.Drawing.Point(179, 489);
+            this.refBox.Multiline = true;
             this.refBox.Name = "refBox";
-            this.refBox.Size = new System.Drawing.Size(681, 21);
+            this.refBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.refBox.Size = new System.Drawing.Size(702, 40);
             this.refBox.TabIndex = 3;
             // 
             // parameterBox
             // 
             this.parameterBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.parameterBox.Font = new System.Drawing.Font("굴림", 8F);
-            this.parameterBox.Location = new System.Drawing.Point(174, 169);
+            this.parameterBox.Location = new System.Drawing.Point(179, 186);
             this.parameterBox.Multiline = true;
             this.parameterBox.Name = "parameterBox";
             this.parameterBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.parameterBox.Size = new System.Drawing.Size(681, 99);
+            this.parameterBox.Size = new System.Drawing.Size(702, 96);
             this.parameterBox.TabIndex = 3;
             // 
             // exampleBox
             // 
             this.exampleBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.exampleBox.Location = new System.Drawing.Point(174, 392);
+            this.exampleBox.Location = new System.Drawing.Point(179, 389);
             this.exampleBox.Multiline = true;
             this.exampleBox.Name = "exampleBox";
             this.exampleBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.exampleBox.Size = new System.Drawing.Size(681, 85);
+            this.exampleBox.Size = new System.Drawing.Size(702, 94);
             this.exampleBox.TabIndex = 3;
             // 
             // button1
             // 
             this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button1.Location = new System.Drawing.Point(30, 507);
+            this.button1.Location = new System.Drawing.Point(32, 536);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(111, 21);
             this.button1.TabIndex = 4;
@@ -229,8 +231,7 @@
             // 
             // button2
             // 
-            this.button2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.button2.Location = new System.Drawing.Point(174, 507);
+            this.button2.Location = new System.Drawing.Point(179, 535);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 22);
             this.button2.TabIndex = 4;
@@ -246,7 +247,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(858, 532);
+            this.ClientSize = new System.Drawing.Size(884, 561);
             this.Controls.Add(this.construction);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form2";

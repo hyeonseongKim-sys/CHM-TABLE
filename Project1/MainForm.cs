@@ -19,23 +19,29 @@ namespace Project1
         }
 
         /// <summary>
-        /// 최상위 노드 추가
+        /// 최상위 노드 추가버튼 클릭시 Form3를 띄움.
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
         private void 최상위노드추가ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form3 form3 = new Form3();
+            int determinant = 1;
+            Form3 form3 = new Form3(this, determinant);
             form3.Show();
+        }
 
-            
-
-            TreeNode node = new TreeNode(toolStripTextBox1.Text);
-            node.Name = toolStripTextBox1.Text;
+        /// <summary>
+        /// Form3에서 완료 버튼 클릭시 최상위 노드추가.
+        /// </summary>
+        /// <param name="AddName"></param>
+        public void 최상위노드추가(string AddName)
+        {
+            TreeNode node = new TreeNode(AddName);
+            node.Name = AddName;
 
             try
             {
-                if (toolStripTextBox1.Text != "")
+                if (AddName != "")
                 {
                     treeView1.Nodes.Add(node);
                 }
@@ -60,25 +66,36 @@ namespace Project1
         }
 
         /// <summary>
-        /// 하위노드 추가하기
+        /// 하위노드 추가버튼 클릭시 Form3 띄우기
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
         private void 하위노드추가ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            TreeNode node = new TreeNode(toolStripTextBox1.Text);
-            node.Name = toolStripTextBox1.Text;
+            int determinant = 2;
+            Form3 form3 = new Form3(this, determinant);
+            form3.Show();
+        }
+
+        /// <summary>
+        /// 하위노드 추가하기
+        /// </summary>
+        /// <param name="AddName"></param>
+        public void 하위노드추가(string AddName)
+        {
+            TreeNode node = new TreeNode(AddName);
+            node.Name = AddName;
             try
             {
                 if (treeView1.SelectedNode != null)
                 {
                     try
                     {
-                        if (toolStripTextBox1.Text == "")
+                        if (AddName == "")
                         {
                             throw new Exception("생성할 node의 이름을 입력하세요");
                         }
-                        else if(treeView1.SelectedNode.ImageIndex == 1)
+                        else if (treeView1.SelectedNode.ImageIndex == 1)
                         {
                             throw new Exception("Table은 하위경로를 생성하지 못합니다.");
                         }
@@ -99,7 +116,6 @@ namespace Project1
                 Console.WriteLine(error1.Message);
                 MessageBox.Show(error1.Message);
             }
-
         }
 
         /// <summary>
@@ -109,16 +125,26 @@ namespace Project1
         /// <param name="e"></param>
         private void 수정ToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            Form4 form4 = new Form4(this, treeView1.SelectedNode.Text);
+            form4.Show();
+        }
+
+        /// <summary>
+        /// Node 수정하기
+        /// </summary>
+        /// <param name="EditName"></param>
+        public void 수정(string EditName)
+        {
             try
             {
                 if (treeView1.SelectedNode != null)
                 {
-                    if (treeView1.SelectedNode.ImageIndex!=1)
+                    if (treeView1.SelectedNode.ImageIndex != 1)
                     {
-                        if (toolStripTextBox2.Text != "")
+                        if (EditName != "")
                         {
-                            treeView1.SelectedNode.Name = toolStripTextBox2.Text;
-                            treeView1.SelectedNode.Text = toolStripTextBox2.Text;
+                            treeView1.SelectedNode.Name = EditName;
+                            treeView1.SelectedNode.Text = EditName;
                         }
                         else
                             throw new Exception("수정할 node의 이름을 입력하세요!");
@@ -126,7 +152,7 @@ namespace Project1
                     else
                     {
                         throw new Exception("Table의 명칭은 HTML TABLE의 제목으로 지정됩니다.");
-                    }  
+                    }
                 }
                 else
                     throw new Exception("수정할 Node를 선택하지 않았습니다!");
@@ -235,7 +261,7 @@ namespace Project1
         }
 
         /// <summary>
-        /// 수정시, 다른이름으로저장 클릭.
+        /// Table 수정시, 다른이름으로저장 클릭.
         /// </summary>
         /// <param name="address"></param>
         /// <param name="tablename"></param>
@@ -348,7 +374,9 @@ namespace Project1
 
         }
 
+        private void MainForm_Load(object sender, EventArgs e)
+        {
 
-
+        }
     }
 }
