@@ -7,3 +7,14 @@ C:\Users\Hyunseong Kim\C#\Project\Project1\Project1\obj\Debug\Project1.csproj.Ge
 C:\Users\Hyunseong Kim\C#\Project\Project1\Project1\obj\Debug\Project1.csproj.CoreCompileInputs.cache
 C:\Users\Hyunseong Kim\C#\Project\Project1\Project1\obj\Debug\Project1.exe
 C:\Users\Hyunseong Kim\C#\Project\Project1\Project1\obj\Debug\Project1.pdb
+C:\Users\Hyunseong Kim\C#\Project\김현성 단일화면\Project1\bin\Debug\Project1.exe
+C:\Users\Hyunseong Kim\C#\Project\김현성 단일화면\Project1\bin\Debug\Project1.pdb
+C:\Users\Hyunseong Kim\C#\Project\김현성 단일화면\Project1\obj\Debug\Project1.csprojAssemblyReference.cache
+C:\Users\Hyunseong Kim\C#\Project\김현성 단일화면\Project1\obj\Debug\Project1.Form1.resources
+C:\Users\Hyunseong Kim\C#\Project\김현성 단일화면\Project1\obj\Debug\Project1.Properties.Resources.resources
+C:\Users\Hyunseong Kim\C#\Project\김현성 단일화면\Project1\obj\Debug\Project1.csproj.GenerateResource.cache
+C:\Users\Hyunseong Kim\C#\Project\김현성 단일화면\Project1\obj\Debug\Project1.csproj.CoreCompileInputs.cache
+C:\Users\Hyunseong Kim\C#\Project\김현성 단일화면\Project1\obj\Debug\Project1.exe
+C:\Users\Hyunseong Kim\C#\Project\김현성 단일화면\Project1\obj\Debug\Project1.pdb
+C:\Users\Hyunseong Kim\C#\Project\김현성 단일화면\Project1\obj\Debug\Project1.MainForm.resources
+C:\Users\Hyunseong Kim\C#\Project\김현성 단일화면\Project1\obj\Debug\Project1.Form2.resources

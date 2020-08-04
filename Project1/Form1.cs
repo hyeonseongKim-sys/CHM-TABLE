@@ -18,12 +18,14 @@ namespace Project1
         //RDT:Read Text이벤트
         public delegate string[] RDtext();
         public event RDtext RDT;
+        MainForm mf = null;
 
-        public Form1()
+        public Form1(MainForm mainform)
         {
             //RDT:Read Text이벤트에 RD()메소드 추가
             InitializeComponent();
             this.RDT += new RDtext(RD);
+            mf = mainform;
         }
 
         private void constructionBox_TextChanged(object sender, EventArgs e)
@@ -53,7 +55,7 @@ namespace Project1
 
             string fileName = "";
 
-            //SaveFileDialog 객체 생성
+            // SaveFileDialog 객체 생성
             SaveFileDialog saveFileDialog = new SaveFileDialog();
             // 기본 저장 경로
             saveFileDialog.InitialDirectory = @"C:\Users\Hyunseong Kim\OneDrive\바탕 화면";
@@ -64,29 +66,26 @@ namespace Project1
             // 기본 확장자
             saveFileDialog.DefaultExt = "html";
 
-            saveFileDialog.FileName = "제목없음";
+            saveFileDialog.FileName = strarray[0];
 
             if(saveFileDialog.ShowDialog() == DialogResult.OK)
             {
                 fileName = saveFileDialog.FileName.ToString();
             }
 
+            if (fileName != "")
+            {
+                // HTML TABLE 저장.
+                MakeHtml(convertedArray1, convertedArray2, convertedArray3,
+                    convertedArray4, convertedArray5, convertedArray6, convertedArray7, fileName);
 
-
-
-
-            this.MakeHtml(convertedArray1, convertedArray2, convertedArray3, 
-                convertedArray4, convertedArray5, convertedArray6, convertedArray7, fileName);
-
+                // MainForm에 file 주소, methodname 정보전달.
+                mf.AddNode1(fileName, strarray[0]);
+            }
             
-
-
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
+       
                 
         /// <summary>
         /// textbox의 text 읽는 함수
@@ -213,15 +212,8 @@ namespace Project1
         private void MakeHtml(ArrayList methodName, ArrayList description, ArrayList construction,
             ArrayList parameter, ArrayList example, ArrayList reval, ArrayList reference, string fileName)
         {
-            try
-            {
-                FileStream fileStream = new FileStream(fileName, FileMode.Create, FileAccess.Write);
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine(e.Message);
-            }
             
+            FileStream fileStream = new FileStream(fileName, FileMode.Create, FileAccess.ReadWrite, FileShare.ReadWrite);          
             StreamWriter sw = new StreamWriter(fileStream);
 
             sw.WriteLine("<!DOCTYPE HTML PUBLIC ' -//W3C//DTD HTML 4.01 Transitional//EN'>");
@@ -279,7 +271,7 @@ namespace Project1
             sw.WriteLine("<tr>");
             sw.WriteLine("<td>예    제</td>");
             sw.WriteLine("<td>");
-            //sw = 
+            
             AL2String(reval, sw);
             sw.WriteLine("</td>");
             sw.WriteLine("</tr>");
@@ -287,7 +279,7 @@ namespace Project1
             sw.WriteLine("<tr>");
             sw.WriteLine("<td>참고항목</td>");
             sw.WriteLine("<td>");
-            //sw = 
+            
             AL2String(reference, sw);
             sw.WriteLine("</td>");
             sw.WriteLine("</tr>");
@@ -298,6 +290,7 @@ namespace Project1
             sw.WriteLine("</html>");
 
             sw.Close();
+            fileStream.Close();
 
         }
 
@@ -307,7 +300,6 @@ namespace Project1
         /// <param name="array"></param>
         /// <param name="sw"></param>
         /// <returns></returns>
-
         private void AL2String(ArrayList array, StreamWriter sw)
         {
             for (int i=0; i<array.Count; i++)
@@ -315,8 +307,7 @@ namespace Project1
                 sw.WriteLine("{0}", array[i]);
             }
 
-            //return sw;
+            
         }
-
     }
 }
